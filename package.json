@@ -1,0 +1,17 @@
+{
+  "name": "snake-game",
+  "version": "1.0.0",
+  "description": "A simple snake game built with TypeScript",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --format=iife --target=es2020 --minify",
+    "dev": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --format=iife --target=es2020 --watch --servedir=."
+  },
+  "keywords": ["snake", "game", "typescript"],
+  "author": "UXN Digital",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.0",
+    "typescript": "^5.3.0"
+  }
+}
