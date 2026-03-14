@@ -5,7 +5,8 @@
   "main": "dist/bundle.js",
   "scripts": {
     "build": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --format=iife --target=es2020 --minify",
-    "dev": "esbuild src/index.ts --bundle --outfile=dist/bundle.js --format=iife --target=es2020 --watch --servedir=."
+    "dev": "node scripts/dev-server.js",
+    "start": "node scripts/dev-server.js"
   },
   "keywords": ["snake", "game", "typescript"],
   "author": "UXN Digital",
